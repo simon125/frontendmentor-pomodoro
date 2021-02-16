@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body class="container">
+    <h1 class="app-name">pomodoro</h1>
+    <div class="toggle-button-wrapper">
+      <label class="toggle-option__label toggle-option--active" for="pomodoro">
+        pomodoro
+        <input
+          class="toggle-option__input"
+          type="radio"
+          name="pomodoro-state"
+          id="pomodoro"
+        />
+      </label>
+      <label class="toggle-option__label" for="shortBreak">
+        short break
+        <input
+          class="toggle-option__input"
+          type="radio"
+          name="pomodoro-state"
+          id="shortBreak"
+        />
+      </label>
+      <label class="toggle-option__label" for="longBreak">
+        long break
+        <input
+          class="toggle-option__input"
+          type="radio"
+          name="pomodoro-state"
+          id="longBreak"
+        />
+      </label>
+      <span class="active-state-indicator"></span>
+    </div>
+    <div class="canvas-wrapper">
+      <p class="countdown-time-container">
+        <time id="countdown-time"> </time>
+      </p>
+      <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <button class="setting-button"><i class="fas fa-cog"></i></button>
+    <script src="./index.js"></script>
+  </body>
+</html>
